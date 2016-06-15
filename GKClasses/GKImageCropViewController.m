@@ -54,7 +54,7 @@
                                                                                           target:self 
                                                                                           action:@selector(_actionCancel)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"GKIuse", @"")
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"NextCapKey", @"")
                                                                               style:UIBarButtonItemStyleBordered 
                                                                              target:self 
                                                                              action:@selector(_actionUse)];
@@ -75,10 +75,10 @@
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
 		
-        [[self.cancelButton titleLabel] setFont:[UIFont boldSystemFontOfSize:16]];
+        [[self.cancelButton titleLabel] setFont:[UIFont boldSystemFontOfSize:12]];
         [[self.cancelButton titleLabel] setShadowOffset:CGSizeMake(0, -1)];
-        [self.cancelButton setFrame:CGRectMake(0, 0, 58, 30)];
-        [self.cancelButton setTitle:NSLocalizedString(@"GKIcancel",@"") forState:UIControlStateNormal];
+        [self.cancelButton setFrame:CGRectMake(0, 0, 80, 30)];
+        [self.cancelButton setTitle:NSLocalizedString(@"CancelCapKey",@"") forState:UIControlStateNormal];
         [self.cancelButton setTitleShadowColor:[UIColor colorWithRed:0.118 green:0.247 blue:0.455 alpha:1] forState:UIControlStateNormal];
         [self.cancelButton  addTarget:self action:@selector(_actionCancel) forControlEvents:UIControlEventTouchUpInside];
     } else {
@@ -90,7 +90,7 @@
         [[self.cancelButton titleLabel] setFont:[UIFont boldSystemFontOfSize:11]];
         [[self.cancelButton titleLabel] setShadowOffset:CGSizeMake(0, 1)];
         [self.cancelButton setFrame:CGRectMake(0, 0, 50, 30)];
-        [self.cancelButton setTitle:NSLocalizedString(@"GKIcancel",@"") forState:UIControlStateNormal];
+        [self.cancelButton setTitle:NSLocalizedString(@"CancelCapKey",@"") forState:UIControlStateNormal];
         [self.cancelButton setTitleColor:[UIColor colorWithRed:0.173 green:0.176 blue:0.176 alpha:1] forState:UIControlStateNormal];
         [self.cancelButton setTitleShadowColor:[UIColor colorWithRed:0.827 green:0.831 blue:0.839 alpha:1] forState:UIControlStateNormal];
         [self.cancelButton  addTarget:self action:@selector(_actionCancel) forControlEvents:UIControlEventTouchUpInside];
@@ -102,10 +102,10 @@
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         self.useButton = [UIButton buttonWithType:UIButtonTypeCustom];
 		
-        [[self.useButton titleLabel] setFont:[UIFont boldSystemFontOfSize:16]];
+        [[self.useButton titleLabel] setFont:[UIFont boldSystemFontOfSize:12]];
         [[self.useButton titleLabel] setShadowOffset:CGSizeMake(0, -1)];
-        [self.useButton setFrame:CGRectMake(0, 0, 58, 30)];
-        [self.useButton setTitle:NSLocalizedString(@"GKIuse",@"") forState:UIControlStateNormal];
+        [self.useButton setFrame:CGRectMake(0, 0, 80, 30)];
+        [self.useButton setTitle:NSLocalizedString(@"NextCapKey",@"") forState:UIControlStateNormal];
         [self.useButton setTitleShadowColor:[UIColor colorWithRed:0.118 green:0.247 blue:0.455 alpha:1] forState:UIControlStateNormal];
         [self.useButton  addTarget:self action:@selector(_actionUse) forControlEvents:UIControlEventTouchUpInside];
     } else {
@@ -117,7 +117,7 @@
         [[self.useButton titleLabel] setFont:[UIFont boldSystemFontOfSize:11]];
         [[self.useButton titleLabel] setShadowOffset:CGSizeMake(0, -1)];
         [self.useButton setFrame:CGRectMake(0, 0, 50, 30)];
-        [self.useButton setTitle:NSLocalizedString(@"GKIuse",@"") forState:UIControlStateNormal];
+        [self.useButton setTitle:NSLocalizedString(@"NextCapKey",@"") forState:UIControlStateNormal];
         [self.useButton setTitleShadowColor:[UIColor colorWithRed:0.118 green:0.247 blue:0.455 alpha:1] forState:UIControlStateNormal];
         [self.useButton  addTarget:self action:@selector(_actionUse) forControlEvents:UIControlEventTouchUpInside];
     }
