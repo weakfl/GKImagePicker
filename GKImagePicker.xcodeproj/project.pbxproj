@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93C6DAA123041F23005FFDA7 /* GKUIImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C6DAA023041F23005FFDA7 /* GKUIImagePickerController.m */; };
+		93E182D22304229800994D67 /* GKUIImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E182D12304229800994D67 /* GKUIImagePickerController.m */; };
 		C147FBF61677C12F0035B373 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C147FBF51677C12F0035B373 /* Default-568h@2x.png */; };
 		C1C7B6631598429E007B2669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C7B6621598429E007B2669 /* UIKit.framework */; };
 		C1C7B6651598429E007B2669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C7B6641598429E007B2669 /* Foundation.framework */; };
@@ -38,8 +38,8 @@
 /* Begin PBXFileReference section */
 		93C6DA9D23041A48005FFDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		93C6DA9E23041A48005FFDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		93C6DA9F23041EBA005FFDA7 /* GKUIImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKUIImagePickerController.h; sourceTree = "<group>"; };
-		93C6DAA023041F23005FFDA7 /* GKUIImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKUIImagePickerController.m; sourceTree = "<group>"; };
+		93E182D02304229800994D67 /* GKUIImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKUIImagePickerController.h; path = GKClasses/GKUIImagePickerController.h; sourceTree = SOURCE_ROOT; };
+		93E182D12304229800994D67 /* GKUIImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GKUIImagePickerController.m; path = GKClasses/GKUIImagePickerController.m; sourceTree = SOURCE_ROOT; };
 		C147FBF51677C12F0035B373 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C1C7B65E1598429E007B2669 /* GKImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C7B6621598429E007B2669 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -149,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				C1C7B6CF15984306007B2669 /* Images */,
-				93C6DA9F23041EBA005FFDA7 /* GKUIImagePickerController.h */,
-				93C6DAA023041F23005FFDA7 /* GKUIImagePickerController.m */,
+				93E182D02304229800994D67 /* GKUIImagePickerController.h */,
+				93E182D12304229800994D67 /* GKUIImagePickerController.m */,
 				C1C7B6C7159842F9007B2669 /* GKImagePicker.h */,
 				C1C7B6C8159842F9007B2669 /* GKImagePicker.m */,
 				C1C7B6C9159842F9007B2669 /* GKImageCropViewController.h */,
@@ -258,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C7B6E515984465007B2669 /* GKImagePicker.m in Sources */,
+				93E182D22304229800994D67 /* GKUIImagePickerController.m in Sources */,
 				C1C7B6E615984465007B2669 /* GKImageCropViewController.m in Sources */,
 				C1C7B6E715984465007B2669 /* GKImageCropView.m in Sources */,
 				C1C7B6E815984465007B2669 /* GKImageCropOverlayView.m in Sources */,
@@ -266,7 +267,6 @@
 				C1C7B6731598429E007B2669 /* AppDelegate.m in Sources */,
 				D696F4FA16111C28007802E6 /* GKCropBorderView.m in Sources */,
 				D6862A9216111C68005A5C5C /* GKResizeableCropOverlayView.m in Sources */,
-				93C6DAA123041F23005FFDA7 /* GKUIImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
