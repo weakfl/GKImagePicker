@@ -222,14 +222,24 @@
 
 - (void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
-    
+
+    CGFloat bottomOffset = 54;
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = UIApplication.sharedApplication.keyWindow;
+        bottomOffset += window.safeAreaInsets.bottom;
+    }
+
     self.imageCropView.frame = self.view.bounds;
-    self.toolbar.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - 54, 320, 54);
+    self.toolbar.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - bottomOffset, CGRectGetWidth(self.view.frame), bottomOffset);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end
